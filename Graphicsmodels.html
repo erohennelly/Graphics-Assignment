@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <title>My first X3DOM page</title>
+    <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
+</head>
+
+<body>
+    <h1>Soccer Pitch</h1>
+    <p>
+        This is an interactive NES Controller!
+    </p>
+    <x3d width='1200px' height='800px'>
+        <Scene DEF='scene'>
+
+            <Transform DEF='NES_Body' translation='0 0 0'>
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='0 180 0' />
+                    </Appearance>
+                    <Box size='165 111 1.7' />
+                </Shape>
+            </Transform>
+
+			<Transform DEF="Left Goal Line" translation="-73 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+		
+		<Transform DEF="Left 13 Line" translation="-60 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+			<Transform DEF="Left 21 Line" translation="-52 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+			<Transform DEF="Left 45 Line" translation="-28 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+			<Transform DEF="Left 65 Line" translation="-8 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+			<Transform DEF="Right 65 Line" translation="8 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+			<Transform DEF="Right 45 Line" translation="28 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+			<Transform DEF="Right 21 Line" translation="52 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+			<Transform DEF="Right 13 Line" translation="60 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+		<Transform DEF="Right Goal Line" translation="73 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 90' />
+                </Shape>
+            </Transform>
+			
+			<Transform DEF="Midfield Line" translation="0 0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='.2 .02 15' />
+                </Shape>
+            </Transform>
+            <Transform DEF='Right Penalty Spot' translation='63 -0.05 .9' rotation='1 0 0 -1.6'>
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Cylinder height='.02' radius='.5' />
+                </Shape>
+            </Transform>
+
+            
+
+            <Transform DEF="Bottom Sideline" translation="0 -45 0.9" rotation="1 0 0 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='146 .2 .02' />
+                </Shape>
+            </Transform>
+
+			<Transform DEF="Top Sideline" translation="0 45 0.9" rotation="1 0 0 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='146 .2 .02' />
+                </Shape>
+            </Transform>
+			
+            <Transform DEF="UpAndDownButton" translation="-55 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Box size='2 .2 3' />
+                </Shape>
+            </Transform>
+        </Scene>
+    </x3d>
+</body>
+
+</html>
