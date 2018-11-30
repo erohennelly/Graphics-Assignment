@@ -17,7 +17,7 @@
 		
 		<Viewpoint id="front" position="0 -160 55" orientation="20 0 0 1.3" description="camera"></Viewpoint>
 		
-            <Transform DEF='NES_Body' translation='0 0 0'>
+            <Transform DEF='Pitch' translation='0 0 0'>
                 <Shape>
                     <Appearance>
                         <Material diffuseColor='0 180 0' />
@@ -28,94 +28,52 @@
              
 		<!--Main Lines of the Pitch -->
 		<Transform DEF="Left Goal Line" translation="-73 0 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
+               <Group DEF="Line of Pitch">
+			   <Shape>
                     <Appearance>
                         <Material diffuseColor='128 128 128' />
                     </Appearance>
                     <Box size='.2 .02 90.2' />
                 </Shape>
+				</Group>
             </Transform>
 		
+	
 		<Transform DEF="Left 13 Line" translation="-60 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90' />
-                </Shape>
-            </Transform>
-			
+                <Shape Use = "Line of Pitch">
+			</Transform>
+				
 		<Transform DEF="Left 21 Line" translation="-52 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90' />
-                </Shape>
-            </Transform>
+                <Shape Use = "Line of Pitch">
+			</Transform>
 			
 		<Transform DEF="Left 45 Line" translation="-28 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90' />
-                </Shape>
-            </Transform>
+                <Shape Use = "Line of Pitch">
+			</Transform>
 			
 		<Transform DEF="Left 65 Line" translation="-8 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90' />
-                </Shape>
-            </Transform>
+                <Shape Use = "Line of Pitch">
+			</Transform>
 			
 		<Transform DEF="Right 65 Line" translation="8 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90' />
-                </Shape>
-            </Transform>
+                <Shape Use = "Line of Pitch">
+			</Transform>
 			
 		<Transform DEF="Right 45 Line" translation="28 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90' />
-                </Shape>
-            </Transform>
+                <Shape Use = "Line of Pitch">
+			</Transform>
 			
 		<Transform DEF="Right 21 Line" translation="52 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90' />
-                </Shape>
-            </Transform>
+                <Shape Use = "Line of Pitch">
+			</Transform>
 			
 		<Transform DEF="Right 13 Line" translation="60 -0.05 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90' />
-                </Shape>
-            </Transform>
+                <Shape Use = "Line of Pitch">
+			</Transform>
 			
 		<Transform DEF="Right Goal Line" translation="73 0 0.9" rotation="0.0 0.7 0.7 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='.2 .02 90.2' />
-                </Shape>
-            </Transform>
+                <Shape Use = "Line of Pitch">
+			</Transform>
 			
 		<Transform DEF="Midfield Line" translation="0 0.05 0.9" rotation="0.0 0.7 0.7 3.14">
                 <Shape>
@@ -128,87 +86,85 @@
 			
 
         <Transform DEF="Bottom Sideline" translation="0 -45 0.9" rotation="1 0 0 3.14">
-                <Shape>
+                <Group DEF="SideLine of Pitch">
+				<Shape>
                     <Appearance>
                         <Material diffuseColor='128 128 128' />
                     </Appearance>
                     <Box size='146 .2 .02' />
                 </Shape>
+				</Group>
             </Transform>
 
 		<Transform DEF="Top Sideline" translation="0 45 0.9" rotation="1 0 0 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='146 .2 .02' />
-                </Shape>
+                <Shape Use = "SideLine of Pitch">
             </Transform>
+			
 		<!--Main Lines of the Pitch -->
 			
 			<!--Left Box-->
 			
-			<Transform DEF="Left Top Edge of box" translation="-66.5 9.5 0.9" rotation="1 0 0 3.14">
-                <Shape>
+		<Transform DEF="Left Top Edge of box" translation="-66.5 9.5 0.9" rotation="1 0 0 3.14">
+                <Group DEF="Edge of Box">
+				<Shape>
                     <Appearance>
                         <Material diffuseColor='128 128 128' />
                     </Appearance>
                     <Box size='13 .2 .02' />
                 </Shape>
+				</Group>
             </Transform>
 			
 			<Transform DEF="Left Bottom Edge of box" translation="-66.5 -9.5 0.9" rotation="1 0 0 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='13 .2 .02' />
-                </Shape>
+                <Shape Use = "Edge of Box">
             </Transform>
 			
 			<Transform DEF='Left Goal Left Upright' translation='-73 -3.25 9.99' rotation='10 0 0 -1.6'>
-                <Shape>
+                <Group DEF="Upright">
+				<Shape>
                     <Appearance>
                         <Material diffuseColor='128 128 128' />
                     </Appearance>
                     <Cylinder height='20' radius='.2' />
                 </Shape>
+				</Group>
             </Transform>
 			
 			<Transform DEF='Left Goal Crossbar' translation='-73 -0.1 4' rotation='0 0 0 -1.6'>
-                <Shape>
+                <Group DEF="Crossbar">
+				<Shape>
                     <Appearance>
                         <Material diffuseColor='128 128 128' />
                     </Appearance>
                     <Cylinder height='6.5' radius='.2' />
                 </Shape>
+				</Group>
             </Transform>
 			
 			<Transform DEF='Left Goal Right Upright' translation='-73 3.25 9.99' rotation='10 0 0 -1.6'>
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Cylinder height='20' radius='.2' />
-                </Shape>
+                <Shape Use = "Upright">
             </Transform>
 			
 			<Transform DEF='Left Penalty Spot' translation='-63 0 .9' rotation='1 0 0 -1.6'>
-                <Shape>
+                <Group DEF="Penalty spot">
+				<Shape>
                     <Appearance>
                         <Material diffuseColor='128 128 128' />
                     </Appearance>
                     <Cylinder height='.02' radius='.5' />
                 </Shape>
+				</Group>
             </Transform>
 			
 			<Transform DEF="Left Top Edge of Small box" translation="-70.75 7 0.9" rotation="1 0 0 3.14">
-                <Shape>
+                <Group DEF="Small square">
+				<Shape>
                     <Appearance>
                         <Material diffuseColor='128 128 128' />
                     </Appearance>
                     <Box size='4.5 .2 .02' />
                 </Shape>
+				</Group>
             </Transform>
 			
 			<Transform DEF="Left Edge of small Square" translation="-68.5 0 0.9" rotation="0.0 0.7 0.7 3.14">
@@ -221,12 +177,7 @@
             </Transform>
 			
 			<Transform DEF="Left Bottom Edge of Small box" translation="-70.75 -7 0.9" rotation="1 0 0 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='4.5 .2 .02' />
-                </Shape>
+                <Shape Use = "Small square">
             </Transform>
 			
 						<!--Left Box-->
@@ -234,66 +185,32 @@
 						<!--Right Box-->
 			
 			<Transform DEF="Right Top Edge of box" translation="66.5 9.5 0.9" rotation="1 0 0 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='13 .2 .02' />
-                </Shape>
+                <Shape Use = "Edge of Box">
             </Transform>
 			
 			<Transform DEF="Right Bottom Edge of box" translation="66.5 -9.5 0.9" rotation="1 0 0 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='13 .2 .02' />
-                </Shape>
+               <Shape Use = "Edge of Box">
             </Transform>
 			
 			<Transform DEF='Right Penalty Spot' translation='63 0 .9' rotation='1 0 0 -1.6'>
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Cylinder height='.02' radius='.5' />
-                </Shape>
+                <Shape Use = "Penalty spot">
             </Transform>
 			
+			
 			<Transform DEF='Right Goal Left Upright' translation='73 3.25 9.99' rotation='10 0 0 -1.6'>
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Cylinder height='20' radius='.2' />
-                </Shape>
+                <Shape Use = "Upright">
             </Transform>
 			
 			<Transform DEF='Right GoalCrossbar' translation='73 -0.1 4' rotation='0 0 0 -1.6'>
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Cylinder height='6.5' radius='.2' />
-                </Shape>
+                <Shape Use = "Crossbar">
             </Transform>
 			
 			<Transform DEF='Right Goal Right Upright' translation='73 -3.25 9.99' rotation='10 0 0 -1.6'>
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Cylinder height='20' radius='.2' />
-                </Shape>
+                <Shape Use = "Upright">
             </Transform>
 			
 			<Transform DEF="Right Top Edge of Small box" translation="70.75 7 0.9" rotation="1 0 0 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='4.5 .2 .02' />
-                </Shape>
+                <Shape Use = "Small square">
             </Transform>
 			
 			<Transform DEF="Right Edge of small Square" translation="68.5 0 0.9" rotation="0.0 0.7 0.7 3.14">
@@ -306,18 +223,13 @@
             </Transform>
 			
 			<Transform DEF="Right Bottom Edge of Small box" translation="70.75 -7 0.9" rotation="1 0 0 3.14">
-                <Shape>
-                    <Appearance>
-                        <Material diffuseColor='128 128 128' />
-                    </Appearance>
-                    <Box size='4.5 .2 .02' />
-                </Shape>
+                <Shape Use = "Small square">
             </Transform>
 			
 						<!--Right Box-->
 						
 
-			<Transform DEF="Left Semi-Circle" translation='5 0.05 2'>
+			<Transform DEF="Left Semi-Circle" translation='5 0.05 0.9'>
 				<Shape>
 				    <Appearance>
                         <Material diffuseColor='128 128 128' />
@@ -327,7 +239,13 @@
                 </Shape>
             </Transform> 
 
-            
+			<Transform translation='3 0 5'>
+<Shape>
+<!-- TODO isolated problem: Xj3D end segments squeezed (but not shut) when crossSection is closed, regardless of beginCap='true' endCap='true' --> 
+<Extrusion DEF='Extrusion9CircularSpineSquareCrossection' crossSection='0.1 0.1 0.1 -0.1 -0.1 -0.1 -0.1 0.1 0.1 0.1' spine='0 1 0 0.309 0.951 0 0.588 0.809 0 0.809 0.588 0 0.951 0.309 0 1 0 0 0.951 -0.309 0 0.809 -0.588 0 0.588 -0.809 0 0.309 -0.951 0 0 -1 0 -0.309 -0.951 0 -0.588 -0.809 0 -0.809 -0.588 0 -0.951 -0.309 0 -1 -0 0 -0.951 0.309 0 -0.809 0.588 0 -0.588 0.809 0 -0.309 0.951 0 0 1 0'/> 
+<Appearance USE='AppearanceDefault'/>
+</Shape>
+</Transform>
         </Scene>
     </x3d>
 </body>
