@@ -1,18 +1,16 @@
 <html>
 
 <head>
-    <title>My first X3DOM page</title>
+    <title>Graphics & Image Processing</title>
     <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
     <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
 </head>
 
 <body>
     <h1>Gaa Pitch</h1>
-    <p>
-        Gaa Pitch
-    </p>
+   
 	
-    <x3d width='1200px' height='800px'>
+    <x3d width='1600px' height='1000px'>
         <Scene DEF='scene'>
 		
 		<Viewpoint id="front" position="0 -160 55" orientation="20 0 0 1.3" description="camera"></Viewpoint>
@@ -229,7 +227,7 @@
 						<!--Right Box-->
 						
 
-			<Transform DEF="Left Semi-Circle" translation='5 0.05 0.9'>
+			<!-- <Transform DEF="Left Semi-Circle" translation='-52 0 0.9'>
 				<Shape>
 				    <Appearance>
                         <Material diffuseColor='128 128 128' />
@@ -237,15 +235,230 @@
                     <Extrusion convex="False" crossSection='0 1 0.105 0.995 0.208 0.978 0.309 0.951 0.407 0.914 0.5 0.866 0.588 0.809 0.669 0.743 0.743 0.669 0.809 0.588 0.866 0.5 0.914 0.407 0.951 0.309 0.978 0.208 0.995 0.105 1 0 0.995 -0.105 0.978 -0.208 0.951 -0.309 0.914 -0.407 0.866 -0.5 0.809 -0.588 0.743 -0.669 0.669 -0.743 0.588 -0.809 0.5 -0.866 0.407 -0.914 0.309 -0.951 0.208 -0.978 0.105 -0.995 0 -1 -0.105 -0.995 -0.208 -0.978 -0.309 -0.951 -0.407 -0.914 -0.5 -0.866 -0.588 -0.809 -0.669 -0.743 -0.743 -0.669 -0.809 -0.588 -0.866 -0.5 -0.914 -0.407 -0.951 -0.309 -0.978 -0.208 -0.995 -0.105 -1 -0 -0.995 0.105 -0.978 0.208 -0.951 0.309 -0.914 0.407 -0.866 0.5 -0.809 0.588 -0.743 0.669 -0.669 0.743 -0.588 0.809 -0.5 0.866 -0.407 0.914 -0.309 0.951 -0.208 0.978 -0.105 0.995 0 1'/> 
 					<Appearance USE='AppearanceDefault'/>
                 </Shape>
-            </Transform> 
+            </Transform> -->
 
-			<Transform translation='3 0 5'>
-<Shape>
-<!-- TODO isolated problem: Xj3D end segments squeezed (but not shut) when crossSection is closed, regardless of beginCap='true' endCap='true' --> 
-<Extrusion DEF='Extrusion9CircularSpineSquareCrossection' crossSection='0.1 0.1 0.1 -0.1 -0.1 -0.1 -0.1 0.1 0.1 0.1' spine='0 1 0 0.309 0.951 0 0.588 0.809 0 0.809 0.588 0 0.951 0.309 0 1 0 0 0.951 -0.309 0 0.809 -0.588 0 0.588 -0.809 0 0.309 -0.951 0 0 -1 0 -0.309 -0.951 0 -0.588 -0.809 0 -0.809 -0.588 0 -0.951 -0.309 0 -1 -0 0 -0.951 0.309 0 -0.809 0.588 0 -0.588 0.809 0 -0.309 0.951 0 0 1 0'/> 
-<Appearance USE='AppearanceDefault'/>
-</Shape>
-</Transform>
+<!-- Left Sides Flags -->
+
+        <!-- Endline Flags -->
+
+            <Transform DEF='Bottom Left Corner' translation='-73 -45 1.3' rotation='10 0 0 -1.6'>
+                <Group DEF="Pole">
+				<Shape>
+                    <Appearance>
+                        <Material diffuseColor='128 128 128' />
+                    </Appearance>
+                    <Cylinder height='.8' radius='.05' />
+                </Shape>
+				</Group>
+            </Transform>
+			
+			<Transform translation='-72.77 -45.01 1.55' rotation="3 0 0 1.55">
+			    <Group DEF= "Flag">
+                <Shape>
+                    <appearance>
+                        <material diffuseColor='128 128 128'></material>
+                         <ImageTexture url='gaaemblem.jpg'/>
+                    </appearance>
+                    <Box size=".4 .27 .001"/>
+                </Shape>
+			</Transform>
+				
+			<Transform DEF='Top Left Corner' translation='-73 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+			<Transform DEF='Top Left Endline Flag' translation='-72.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+                    
+		<!-- Endline Flags -->
+
+		<!-- 13 Flags -->
+
+		    <Transform DEF='Top Left 13 Flag' translation='-59.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+			
+			<Transform DEF='Top Left 13 Pole' translation='-60 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+	        <Transform DEF='Bottom Left 13 Flag' translation='-59.77 -45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+
+			<Transform DEF='Bottom Left 13 Pole' translation='-60 -45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+	    <!-- 13 Flags -->
+
+	    <!-- 21 Flags -->
+
+			<Transform DEF='Top Left 21 Flag' translation='-51.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+		
+		    <Transform DEF='Top Left 21 Pole' translation='-52 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+		    <Transform DEF='Bottom Left 21 Flag' translation='-51.77 -45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+			
+			<Transform DEF='Bottom Left 21 Pole' translation='-52 -45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+	    <!-- 21 Flags -->
+		
+	    <!-- 45 Flags -->
+
+			<Transform DEF='Top Left 45 Flag' translation='-27.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+			
+			<Transform DEF='Top Left 45 Pole' translation='-28 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+			<Transform DEF='Bottom Left 45 Flag' translation='-27.77 -45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+			
+			<Transform DEF='Bottom Left 45 Pole' translation='-28 -45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+
+	    <!-- 45 Flags -->
+
+	    <!-- 65 Flags -->
+
+			<Transform DEF='Top Left 65 Flag' translation='-7.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+
+            <Transform DEF='Top Left 45 Pole' translation='-8 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+			<Transform DEF='Bottom Left 65 Flag' translation='-7.77 -45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+		
+		    <Transform DEF='Bottom Left 65 Pole' translation='-8 -45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+		<!-- 65 Flags -->
+
+<!-- Left Sides Flags -->
+
+<!-- Right Sides Flags -->
+
+        <!-- Endline Flags -->
+
+            <Transform DEF='Bottom Right Corner' translation='73 -45 1.3' rotation='10 0 0 -1.6'>
+                <Shape Use="Pole">
+			</Transform>
+			
+			<Transform DEF='Bottom Right Corner' translation='72.77 -45.01 1.55' rotation="3 0 0 1.55">
+			    <Shape Use="Flag">
+			</Transform>
+				
+			<Transform DEF='Top Right Corner' translation='73 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+			<Transform DEF='Top Right Endline Flag' translation='72.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+                    
+		<!-- Endline Flags -->
+
+		<!-- 13 Flags -->
+
+		    <Transform DEF='Top Right 13 Flag' translation='59.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+			
+			<Transform DEF='Top Right 13 Pole' translation='60 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+	        <Transform DEF='Bottom Right 13 Flag' translation='59.77 -45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+
+			<Transform DEF='Bottom Right 13 Pole' translation='60 -45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+	    <!-- 13 Flags -->
+
+	    <!-- 21 Flags -->
+
+			<Transform DEF='Top Right 21 Flag' translation='51.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+		
+		    <Transform DEF='Top Right 21 Pole' translation='52 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+		    <Transform DEF='Bottom Right 21 Flag' translation='51.77 -45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+			
+			<Transform DEF='Bottom Right 21 Pole' translation='52 -45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+	    <!-- 21 Flags -->
+		
+	    <!-- 45 Flags -->
+
+			<Transform DEF='Top Right 45 Flag' translation='27.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+			
+			<Transform DEF='Top Right 45 Pole' translation='28 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+			<Transform DEF='Bottom Right 45 Flag' translation='27.77 -45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+			
+			<Transform DEF='Bottom Right 45 Pole' translation='28 -45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+
+	    <!-- 45 Flags -->
+
+	    <!-- 65 Flags -->
+
+			<Transform DEF='Top Right 65 Flag' translation='7.77 45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+
+            <Transform DEF='Top Right 45 Pole' translation='8 45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+			<Transform DEF='Bottom Right 65 Flag' translation='7.77 -45.01 1.55' rotation="3 0 0 1.55">
+				<Shape Use = "Flag">
+			</Transform> 
+		
+		    <Transform DEF='Bottom Right 65 Pole' translation='8 -45 1.3' rotation='10 0 0 -1.6'>
+			    <Shape Use="Pole">
+			</Transform>
+			
+		<!-- 65 Flags -->
+
+<!-- Right Sides Flags -->
+
         </Scene>
     </x3d>
 </body>
